@@ -25,6 +25,7 @@
 .ex-3-square:hover{
     border-radius: 50%;
 }
+/* solutions.css:  border-radius: 100%; */
 
 /* ESERCIZIO 4 */
 
@@ -45,7 +46,8 @@
     width: 100px;
     height: 100px;
     margin: 0;
-} /* o con transform scale */
+} 
+/* solutions.css:   transform: scale(2); */
 
 .ex-5-square:active{
     transform: scale(.5);
@@ -94,6 +96,7 @@
     animation-timing-function: linear;   
 }
 
+/* giro orario 0% in 0deg e 100% in 360deg */
 @keyframes rotate-infinite{
     0%{
         transform: rotate(360deg);
@@ -101,8 +104,11 @@
     100%{
         transform: rotate(0deg);
     }
+    /* solution css:
+    0% {
+        transform: rotate(1turn);
+    } */
 }
-/* giro orario 0% in 0deg e 100% in 360deg */
 
 /* ESERCIZIO 11 */
 .ex-11-icon:hover{
@@ -157,9 +163,7 @@
     }
     100%{
         right: 20%;     
-    }
-
-    
+    }  
 }
 
 
@@ -243,3 +247,7 @@
         right: 20%;     
     }
 }
+
+/* calcolare meglio le dimensioni con calc
+il button width 200px e height 70px
+il quadratino width 60px e height 20px */
