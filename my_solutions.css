@@ -52,6 +52,10 @@
 }
 
 /* ESERCIZIO 6 */
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
 /* ESERCIZIO 7 */
 /* ESERCIZIO 8 */
 /* ESERCIZIO 9 */
