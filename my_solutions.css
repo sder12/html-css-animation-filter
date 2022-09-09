@@ -105,5 +105,20 @@
 /* giro orario 0% in 0deg e 100% in 360deg */
 
 /* ESERCIZIO 11 */
+.ex-11-icon:hover{
+    animation-name: rotate-half;
+    animation-iteration-count: infinite; 
+    animation-duration: 1s;
+    animation-timing-function: linear;   
+}
+
+@keyframes rotate-half{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 /* ESERCIZIO 12 */
 /* ESERCIZIO 13 */
