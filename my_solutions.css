@@ -38,6 +38,19 @@
 }
 
 /* ESERCIZIO 5 */
+.ex-5-square{
+    transition: all 1s;
+}
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+} /* o con transform scale */
+
+.ex-5-square:active{
+    transform: scale(.5);
+}
+
 /* ESERCIZIO 6 */
 /* ESERCIZIO 7 */
 /* ESERCIZIO 8 */
