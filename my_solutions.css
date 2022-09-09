@@ -15,7 +15,17 @@
     background-color: blue;
     width: 100%;
 }
+
 /* ESERCIZIO 3 */
+
+.ex-3-square{
+    transition: all .5s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
 /* ESERCIZIO 4 */
 /* ESERCIZIO 5 */
 /* ESERCIZIO 6 */
