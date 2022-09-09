@@ -107,8 +107,8 @@
 /* ESERCIZIO 11 */
 .ex-11-icon:hover{
     animation-name: rotate-half;
-    animation-iteration-count: infinite; 
-    animation-duration: 1s;
+    animation-iteration-count: 1; 
+    animation-duration: 1.5s;
     animation-timing-function: linear;   
 }
 
@@ -116,8 +116,11 @@
     0%{
         transform: rotate(0deg);
     }
+    75%{
+        transform: rotate(300deg);
+    }
     100%{
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 }
 /* ESERCIZIO 12 */
