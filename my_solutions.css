@@ -86,6 +86,24 @@
     transform: scale(1.5);
 }
 /* ESERCIZIO 10 */
+
+.ex-10-icon{
+    animation-name: rotate-infinite;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;   
+}
+
+@keyframes rotate-infinite{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* giro orario 0% in 0deg e 100% in 360deg */
+
 /* ESERCIZIO 11 */
 /* ESERCIZIO 12 */
 /* ESERCIZIO 13 */
