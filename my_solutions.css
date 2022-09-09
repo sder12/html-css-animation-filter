@@ -124,4 +124,42 @@
     }
 }
 /* ESERCIZIO 12 */
+.ex-12-button:hover .ex-12-top-white{
+    /* background-color: aquamarine;     */
+    animation-name: top-dodici;
+    animation-duration: 2s;   
+}
+
+@keyframes top-dodici{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 60%;        
+    }
+    100%{        
+        left: 10%;        
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: bottom-dodici;
+    animation-duration: 2s;  
+}
+
+
+@keyframes bottom-dodici{
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: 60%;       
+    }
+    100%{
+        right: 20%;     
+    }
+}
+
+
+
 /* ESERCIZIO 13 */
