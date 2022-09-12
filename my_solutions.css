@@ -1,253 +1,257 @@
 /* ESERCIZIO 1 */
-.ex-1-square{
-    transition: all 3s;
+.ex-1-square {
+  transition: all 3s;
 }
-.ex-1-square:hover{    
-    background-color: red;    
+.ex-1-square:hover {
+  background-color: red;
 }
+
 
 /* ESERCIZIO 2 */
-.ex-2-square{
-    transition: all 3s;
+.ex-2-square {
+  transition: all 3s;
+}
+.ex-2-square:active {
+  background-color: blue;
+  width: 100%;
 }
 
-.ex-2-square:active{
-    background-color: blue;
-    width: 100%;
-}
 
 /* ESERCIZIO 3 */
-
-.ex-3-square{
-    transition: all .5s;
+.ex-3-square {
+  transition: all 0.5s;
+}
+.ex-3-square:hover {
+  border-radius: 50%;
+  /* solutions.css:  border-radius: 100%; */
 }
 
-.ex-3-square:hover{
-    border-radius: 50%;
-}
-/* solutions.css:  border-radius: 100%; */
 
 /* ESERCIZIO 4 */
-
-.ex-4-square{
-    transition: all 1s;
+.ex-4-square {
+  transition: all 1s;
 }
-
-.ex-4-square:hover{
-    /* display: none; */
-    opacity: 0;
+.ex-4-square:hover {
+  opacity: 0;
 }
 
 /* ESERCIZIO 5 */
-.ex-5-square{
-    transition: all 1s;
+.ex-5-square {
+  transition: all 1s;
 }
-.ex-5-square:hover{
-    width: 100px;
-    height: 100px;
-    margin: 0;
-} 
-/* solutions.css:   transform: scale(2); */
+.ex-5-square:hover {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  /* solutions.css:   transform: scale(2); */
+}
+.ex-5-square:active {
+  transform: scale(0.5);
+}
 
-.ex-5-square:active{
-    transform: scale(.5);
-}
 
 /* ESERCIZIO 6 */
-
-.ex-6-img:hover{
-    filter: grayscale(1);
+.ex-6-img:hover {
+  filter: grayscale(1);
 }
+
+
 /* ESERCIZIO 7 */
-.ex-7-img{
-    transition: all 1s;
+.ex-7-img {
+  transition: all 1s;
+}
+.ex-7-img:hover {
+  filter: sepia(0.5) blur(0.5px);
 }
 
-.ex-7-img:hover{
-    filter: sepia(.5) blur(.5px);
-}
+
 /* ESERCIZIO 8 */
-
-.ex-8-img{
-    transition: all 1s;
+.ex-8-img {
+  transition: all 1s;
+}
+.ex-8-img:hover {
+  filter: sepia(0.5) grayscale(0.5);
+  border-radius: 20px;
 }
 
-.ex-8-img:hover{
-    filter: sepia(.5) grayscale(.5);
-    border-radius: 20px;
-}
 
 /* ESERCIZIO 9 */
-.ex-9-img{
-    transition: all 1s;
+.ex-9-img {
+  transition: all 1s;
+}
+.ex-9-img:hover {
+  filter: sepia(0.8) blur(0.5px) grayscale(0.5);
+  border-radius: 20px;
+  transform: scale(1.5);
 }
 
-.ex-9-img:hover{
-    filter: sepia(.8) blur(.5px) grayscale(.5);
-    border-radius: 20px;
-    transform: scale(1.5);
-}
+
 /* ESERCIZIO 10 */
-
-.ex-10-icon{
-    animation-name: rotate-infinite;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-timing-function: linear;   
+.ex-10-icon {
+  animation-name: rotate-infinite;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
-
 /* giro orario 0% in 0deg e 100% in 360deg */
-@keyframes rotate-infinite{
-    0%{
-        transform: rotate(360deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-    /* solution css:
+@keyframes rotate-infinite {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+  /* solution css:
     0% {
         transform: rotate(1turn);
-    } */
+    } 
+    NB se ci sono 2 valori posso usare FROM - TO invece che le percentuali*/
 }
+
 
 /* ESERCIZIO 11 */
-.ex-11-icon:hover{
-    animation-name: rotate-half;
-    animation-iteration-count: 1; 
-    animation-duration: 1.5s;
-    animation-timing-function: linear;   
+.ex-11-icon:hover {
+  animation-name: rotate-half;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+@keyframes rotate-half {
+  0% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-@keyframes rotate-half{
-    0%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(300deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
+
 /* ESERCIZIO 12 */
-.ex-12-button:hover .ex-12-top-white{
-    /* background-color: aquamarine;     */
-    animation-name: top-dodici;
-    animation-duration: 2s;   
+.ex-12-button:hover .ex-12-top-white {
+  /* background-color: aquamarine;     */
+  animation-name: top-dodici;
+  animation-duration: 2s;
+}
+@keyframes top-dodici {
+  0% {
+    left: 10%;
+  }
+  50% {
+    /* left: 60%;    */
+    left: calc(100% - 60px);
+    /* togliere la width totale del quadratino che si muove*/
+  }
+  100% {
+    left: 10%;
+  }
 }
 
-@keyframes top-dodici{
-    0%{
-        left: 10%;
-    }
-    50%{
-        left: 60%;        
-    }
-    100%{        
-        left: 10%;        
-    }
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: bottom-dodici;
+  animation-duration: 2s;
+}
+@keyframes bottom-dodici {
+  0% {
+    right: 20%;
+  }
+  50% {
+    /* left: 60%;    */
+    left: calc(100% - 60px);
+    /* togliere la width totale del quadratino che si muove*/
+  }
+  100% {
+    right: 20%;
+  }
 }
 
-.ex-12-button:hover .ex-12-bottom-white{
-    animation-name: bottom-dodici;
-    animation-duration: 2s;  
-}
-
-
-@keyframes bottom-dodici{
-    0%{
-        right: 20%;
-    }
-    50%{
-        right: 60%;       
-    }
-    100%{
-        right: 20%;     
-    }  
-}
 
 
 /* ESERCIZIO 13 */
-
-.ex-13-button:hover .ex-13-top-white{
-    animation-name: top-tredici;
-    animation-duration: 3s;   
-    animation-timing-function: linear;
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: top-tredici;
+  animation-duration: 3s;
+  animation-timing-function: linear;
 }
 
-@keyframes top-tredici{
+@keyframes top-tredici {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
 
-    0%{
-        top: -10px;
-        left: 10%;
-    }
+  25% {
+    top: -10px;
+    left: calc(100% - (60px / 2));
+  }
 
-    25%{
-        top: -10px;
-        left: calc(100% - (60px / 2));     
-    }
+  50% {
+    top: calc(70px - (20px / 2));
+    /* or --- top: calc(100% - 10px); */
+    left: calc(100% - (60px / 2));
+  }
 
-    50%{
-        top: calc(70px - (20px / 2));
-        left: calc(100% - (60px / 2));
-    }
+  75% {
+    top: calc(70px - (20px / 2));
+    left: -10px;
+  }
 
-    75%{
-        top: calc(70px - (20px / 2));
-        left: -10px;
-    }
+  95% {
+    top: -10px;
+    left: -10px;
+  }
 
-    95%{
-        top: -10px;
-        left: -10px;
-    }
-
-    100%{
-        top: -10px;
-        left: 10%;    
-    }
+  100% {
+    top: -10px;
+    left: 10%;
+  }
 }
 
-
-.ex-13-button:hover .ex-13-bottom-white{
-    animation-name: bottom-tredici;
-    animation-duration: 3s;  
-    animation-timing-function: linear;
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: bottom-tredici;
+  animation-duration: 3s;
+  animation-timing-function: linear;
 }
 
+@keyframes bottom-tredici {
+  0% {
+    bottom: -10px;
+    right: 20%;
+  }
 
-@keyframes bottom-tredici{
-    0%{
-        bottom: -10px;
-        right: 20%;
-    }
+  25% {
+    bottom: -10px;
+    right: calc(200px - 60px);
+  }
 
-    25%{
-        bottom: -10px;
-        right: calc(200px - 60px);       
-    }
+  50% {
+    bottom: calc(70px - 20px / 2);
+    right: calc(200px - 60px);
+  }
 
-    50%{
-        bottom: calc(70px - 20px / 2);
-        right: calc(200px - 60px);
-    }
+  75% {
+    bottom: calc(70px - 20px / 2);
+    right: -10px;
+  }
 
-    75%{
-        bottom: calc(70px - 20px / 2);
-        right:-10px;
-    }
+  95% {
+    bottom: -10px;
+    right: -10px;
+  }
 
-    95%{
-        bottom: -10px;
-        right: -10px;
-    }
-
-    100%{
-        bottom: -10px;
-        right: 20%;     
-    }
+  100% {
+    bottom: -10px;
+    right: 20%;
+  }
 }
 
-/* calcolare meglio le dimensioni con calc
+/* ATTEZIONE: per avere un movimento più fluido devo sperimentare
+con le percentuali perchè distanza più piccola mi serve meno tempo
+- distanza grande più tempo
+es.13: 0% 30% 45% 75% 90% 100%
+---------------------------------------------------------
+calcolare meglio le dimensioni con calc
 il button width 200px e height 70px
 il quadratino width 60px e height 20px */
